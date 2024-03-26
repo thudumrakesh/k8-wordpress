@@ -20,4 +20,7 @@ spec:
         image: rakesh0305/mysql
         ports:
         - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: 123456789
 
