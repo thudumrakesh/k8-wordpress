@@ -20,7 +20,9 @@ spec:
         image: rakesh0305/mysql
         ports:
         - containerPort: 3306
-        env:
-        - name: MYSQL_ROOT_PASSWORD
-          value: "123456789"
+    environment:
+       MYSQL_ROOT_PASSWORD: wordpress
+        MYSQL_DATABASE: new
+        MYSQL_USER: social
+        MYSQL_PASSWORD: rakesh
 
