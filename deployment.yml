@@ -20,13 +20,4 @@ spec:
         image: rakesh0305/wordpress
         ports:
         - containerPort: 80
-        env:
-        - name: WORDPRESS_DB_HOST
-          value: db
-        - name: WORDPRESS_DB_USER
-          value: social
-        - name: WORDPRESS_DB_PASSWORD
-          value: rakesh
-        - name: WORDPRESS_DB_NAME
-          value: new
-
+        
