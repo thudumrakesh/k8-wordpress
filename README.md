@@ -1,6 +1,5 @@
 Build and deploy WordPress application by using Docker,
 Docker-compose file and create the image push that created image into docker hub registry and host the image through k8’s (declarative manifest method).
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 •	Login to amazon console, launch instance access through git bash.
@@ -32,9 +31,7 @@ Docker-compose file and create the image push that created image into docker hub
 •	Generate key pair with command <ssh-keygen> is a versatile tool that can be used in a Kubernetes environment to generate SSH key pairs for securely accessing and managing cluster nodes.
 •	Create a file of deployment.yml, mysql.yml and service.yml  
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-•	Create a cluster with 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------•	Create a cluster with 
   <kops create cluster  --name= rakesh0305.k8s.local --state s3://k8-rakesh –zones=us-east-2a,us-east-2b –node-size=t2.micro --yes
 •	Now deploy in to cluster ,
   <kutectl apply -f mqsql.yml>
